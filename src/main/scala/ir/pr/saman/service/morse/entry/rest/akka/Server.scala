@@ -49,6 +49,26 @@ class Server() {
 
 }
 
+/**
+  * A rest full server which translates english language to morse code
+  *
+  * @api {post} /services/codes/morse/translate
+  * @apiparam {string} a query which is english words and numbers
+  * @apiSuccess {string} a morseCode corresponding to input query string
+  * @apiSuccess {string} original query encoded in Base64
+  * @apiSuccess {string} query encoding which is always Base64
+  * @apiFailure {NotImplemented} error in case the input query characters are not supported with error code 501
+  *
+  * @apiExample {curl} Example usage:
+  * curl -X POST \
+  * http://127.0.0.1:8081/api/v1/services/codes/morse/translate \
+  * -H 'Content-Type: application/json' \
+  * -d '{
+  * "query": "HEL LO"
+  * }'
+  *
+  */
+
 object Server extends SprayImplicits {
   val logger: Logger = (LoggerFactory getLogger "REST API").asInstanceOf[Logger]
 

@@ -9,7 +9,7 @@ In order to run this project:
 * In the Project Structure, switch to project tab, make sure the project has default JDK(prefer jdk-1.8.x)    
 * Copy 'application.template.conf' and rename it as 'application.conf'  
 * Change the host and port in `application.conf`  
-* Run `sbt compile` at project root
+* Run `sbt clean compile` at project root
 * Rub `sbt run` at project root
 * Run 'sbt test' and check all tests passed
 * To check the rest api, use curl or postman:
