@@ -1,6 +1,6 @@
 name := "morse-service"
-
 version := "0.0.1"
+organization := "ir.pr.saman"
 
 scalaVersion := "2.12.10"
 

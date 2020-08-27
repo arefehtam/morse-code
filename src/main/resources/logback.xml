@@ -4,9 +4,6 @@
             <pattern>%yellow(%d{HH:mm:ss.SSS}) %highlight(%-5level) %cyan(%logger{15})- %msg%n%ex{full}</pattern>
         </encoder>
     </appender>
-    <logger name="com.zaxxer.hikari" level="INFO"/>
-    <logger name="com.zaxxer.hikari.pool" level="INFO"/>
-    <logger name="scalikejdbc" level="ERROR"/>
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>

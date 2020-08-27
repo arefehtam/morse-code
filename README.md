@@ -1,4 +1,4 @@
-# morse-service
+# Morse-Service
 
 In order to run this project:
 
@@ -11,7 +11,7 @@ In order to run this project:
 * Change the host and port in `application.conf`  
 * Run `sbt clean compile` at project root
 * Rub `sbt run` at project root
-* Run 'sbt test' and check all tests passed
+* Run `sbt test` and check all tests passed
 * To check the rest api, use curl or postman:
 
     ```

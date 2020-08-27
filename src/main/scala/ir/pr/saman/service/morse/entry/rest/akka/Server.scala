@@ -53,7 +53,7 @@ class Server() {
   * A rest full server which translates english language to morse code
   *
   * @api {post} /services/codes/morse/translate
-  * @apiparam {string} a query which is english words and numbers
+  * @apiParam {string} a query which is english words and numbers
   * @apiSuccess {string} a morseCode corresponding to input query string
   * @apiSuccess {string} original query encoded in Base64
   * @apiSuccess {string} query encoding which is always Base64
@@ -94,7 +94,8 @@ object Server extends SprayImplicits {
               }
             }
           }
-        }
+        },
+        //todo: bulk support
       )
     }
 
